@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+:root {
+  --base-font-size: 16px;
+}
+
+html {
+  font-size: calc(var(--base-font-size) + (1vw + 1vh) / 2);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.screen {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  max-width: 60rem;
+  max-height: 80%;
+  padding: 2rem;
+  margin: 1rem;
+  border: 0.3rem solid #00ff00;
+  box-shadow: 0 0 0.5rem rgba(0, 255, 0, 0.5);
+  font-family: 'Press Start 2P', monospace;
+  color: #00ff00;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 2.5vw;
+}
+
+th,
+td {
+  padding: 0.3rem 0.6rem;
+  border: 0.2rem solid #00ff00;
+  background-color: #1a1a1a;
+}
+
+th {
+  font-size: 2.2vw;
+}
+
+td {
+  font-size: 2.1vw;
+}
+
+tbody tr {
+  display: table-row;
+}
+
+/* Media query for responsive design */
+@media (max-width: 1200px) {
+  :root {
+    --base-font-size: 14px;
+  }
+}
+
+.ticker-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ticker-link:hover {
+  text-decoration: underline;
+}
